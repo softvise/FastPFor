@@ -52,6 +52,8 @@ public:
     }
     AlignedSTLAllocator(const AlignedSTLAllocator& ) {
     }
+	template <typename U>
+	AlignedSTLAllocator(const AlignedSTLAllocator<U, alignment> &) {}
     ~AlignedSTLAllocator() {
     }
 

@@ -10,6 +10,10 @@
 #define UTIL
 #include "common.h"
 
+#ifdef _WIN32
+#	include "intrin.h"
+#endif
+
 #ifdef __linux__
 #define USE_O_DIRECT
 #endif
